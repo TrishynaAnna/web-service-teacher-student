@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,900&display=swap" rel="stylesheet">
+    <link href="../static/css/cabinet.css" rel="stylesheet">
+</head>
+<body>
+<div class="personal__cabinet">
+    <div class="personal__cabinet-title">
+						<h2 class="personal__cabinet-headline">Необхідно заповнити дані </h2>
+
+				</div>
+     <form class="personal__cabinet-form" action="/{{action}}" method=post enctype="multipart/form-data">
+
+
+            <p class="personal__cabinet-label"><label for="firstname" class="personal__cabinet-labelleft">Ім'я: </label></p>
+
+                <input  class="personal__cabinet-labelright" type="text" id="firstname" name="firstname"/>
+
+            <p class="personal__cabinet-label">
+                <label for="lastname" class="personal__cabinet-labelleft">Прізвище:</label></p>
+                <input class="personal__cabinet-labelright" type="text" id="lastname" name="lastname"/>
+              <p class="personal__cabinet-label"><label for="patronymic" class="personal__cabinet-labelleft">По батькові: </label></p>
+
+                <input  class="personal__cabinet-labelright" type="text" id="firstname" name="patronymic"/>
+            <p class="personal__cabinet-label">
+                <label for="date" class="personal__cabinet-labelleft">Дата народження: </label></p>
+                <input class="personal__cabinet-labelright" type="date" id="date" name="date"/><br>
+
+
+         <div class="radio personal__cabinet-label">
+      <span>Стать</span>
+      <label>
+        <input type="radio" name="sex" value="чоловіча">Чоловіча
+        <div class="radio-control male"></div>
+      </label>
+      <label>
+        <input type="radio" name="sex" value="жіноча">Жіноча
+        <div class="radio-control female"></div>
+      </label>
+    </div>
+     </br>
+
+
+
+
+          <div class="personal__cabinet-label">
+
+              <p> <label for="group" class="personal__cabinet-labelleft">Група: </label></p>
+                <input class="personal__cabinet-labelright" type="text" id="group" name="group"/>
+          </div>
+         </br>
+
+              <div class="personal__cabinet-label">
+                   <p> <label for="programming language" class="personal__cabinet-labelleft"> Хобі: </label></p>
+                  <p class="personal__cabinet-label">
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="reading" />
+                  <label class="personal__cabinet-labelCheckbox" for="reading">Читання книжок</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="active_recreation" />
+                  <label class="personal__cabinet-labelCheckbox" for="active_recreation">Активний відпочинок</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="drive" />
+                  <label class="personal__cabinet-labelCheckbox" for="drive">Водіння автомобілю</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="programming" />
+                  <label class="personal__cabinet-labelCheckbox" for="programming">Програмування</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="travel" />
+                  <label class="personal__cabinet-labelCheckbox" for="travel">Подорожі</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="bicycle" />
+                  <label class="personal__cabinet-labelCheckbox" for="bicycle">Катання на велосипеді</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="swimming" />
+                  <label class="personal__cabinet-labelCheckbox" for="swimming">Плавання</label></p>
+              </div>
+         </br>
+              <div class="personal__cabinet-label">
+                   <p> <label for="programming language" class="personal__cabinet-labelleft"> Мови програмування: </label></p>
+                    <p class="personal__cabinet-label">
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="l-python" />
+                  <label class="personal__cabinet-labelCheckbox" for="l-python">Python</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="l-cpp" />
+                  <label class="personal__cabinet-labelCheckbox" for="l-cpp">C++</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="l-ch" />
+                  <label class="personal__cabinet-labelCheckbox" for="l-ch">C#</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="l-js" />
+                  <label class="personal__cabinet-labelCheckbox" for="l-js">JavaScript</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="l-php" />
+                  <label class="personal__cabinet-labelCheckbox" for="l-php">PHP</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="l-java" />
+                  <label class="personal__cabinet-labelCheckbox" for="l-java">Java</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="l-r" />
+                  <label class="personal__cabinet-labelCheckbox" for="l-r">R</label></p>
+               </div>
+
+         </br>
+              <div class="personal__cabinet-label">
+                 <p> <label for="programming language" class="personal__cabinet-labelleft"> Улюблені предмети: </label></p>
+                  <p class="personal__cabinet-label">
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-1" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-1">Аналітична геометрія.</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-2" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-2">Лінійна алгебра.</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-3" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-3">Алгоритми і структури даних</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-4" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-4">Архітектура обчислювальних систем</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-5" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-5">Дискретна математика</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-6" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-6">Математичний аналіз</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-7" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-7">Програмування на мові Python</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-8" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-8">Програмування</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-9" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-9">Фізика</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-10" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-10">Диференціальні рівняння</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-11" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-11">Математична логіка та теорія алгоритмів</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-12" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-12">Математична статистика</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-13" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-13">Методи обчислень</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-14" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-14">Об'єктно-орiєнтоване програмування</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-15" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-15">Обчислювальна геометрія та комп’ютерна графіка</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-16" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-16">Програмування та підтримка веб-застосувань</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-17" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-17">Теорія ймовірності</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-18" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-18">Теорія функцій комплексної змінної</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-19" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-19">Аналіз даних</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-20" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-20">Бази даних та інформаційні системи</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-21" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-21">Випадкові процеси</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-22" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-22">Дослідження операцій</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-23" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-23">Забезпечення якості Програмного Забезпечення</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-24" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-24">Комп'ютерні мережі</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-25" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-25">Операційні системи</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-26" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-26">Рівняння математичної фізики</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-27" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-27">Функціональний аналіз</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-28" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-28">Алгоритми і системи комп'ютерної математики</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-29" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-29">Математичне моделювання</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-30" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-30">Методи штучного інтелекту</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-31" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-31">Теорія керування</label>
+                  <input class="personal__cabinet-inputCheckbox" type="checkbox" id="sub-32" />
+                  <label class="personal__cabinet-labelCheckbox" for="sub-32">Системний аналіз</label>
+
+
+                  </p>
+               </div>
+         <p class="btn__input-file">
+
+              <input name="file" type="file" name="file" id="input__file" class="input input__file" multiple>
+              <label for="input__file" class="input__file-button">
+              <span class="input__file-icon-wrapper"><img class="input__file-icon" src="../img/sign.png" alt="Выбрать файл" width="25"></span>
+                  <span class="input__file-button-text">Обрати файл</span></label>
+         </p>
+            <p>
+                <button type="submit" class="btn__save">Зберегти</button>
+            </p>
+
+        </form>
+</div>
+<script src="https://use.fontawesome.com/aa2391fb57.js"></script>
+</body>
+</html>

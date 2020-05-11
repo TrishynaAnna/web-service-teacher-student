@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="../static/css/index.css" rel="stylesheet">
+
+    <title>Головна ФПМ</title>
+  </head>
+  <body>
+<header class="header" #id="top">
+  <div class="header__nav">
+    <a class="header__logo" href="#">
+      <img class="header__logo-img" src="../img/logo.png" alt="header__logo-img">
+    </a>
+
+    <button class="header__burger" href="#">
+      <span class="header__burger-inner">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </span>
+    </button>
+
+    <div class="header__menu-wrap">
+      <ul class="header__menu">
+        <li class="menu__item">
+          <a href="" class="menu__link">головна</a>
+        </li>
+        <li class="menu__item">
+          <a href="" class="menu__link">викладачі</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">дипломні роботи</a>
+        </li>
+        <li class="menu__item">
+          <a href="{{ bankItem }}" class="menu__link">підбір теми</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">вибір керівника</a>
+        </li>
+        <li class="menu__item">
+          <a href="/student" class="menu__link">Особистий кабінет</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="overlay">
+    <div class="overlay__nav-wrap">
+      <a class="overlay__logo" href="#">
+        <img class="overlay__logo-img" src="../img/logo.png" alt="overlay__logo-img">
+      </a>
+    </div>
+    <ul class="overlay__menu">
+      <li class="overlay__menu-item">
+        <a href="#" class="overlay__menu-link">головна</a>
+      </li>
+      <li class="overlay__menu-item">
+        <a href="#" class="overlay__menu-link">викладачі</a>
+      </li>
+      <li class="overlay__menu-item">
+        <a href="#" class="overlay__menu-link">дипломні роботи</a>
+      </li>
+      <li class="overlay__menu-item">
+        <a href="#" class="overlay__menu-link">банк тем</a>
+      </li>
+      <li class="overlay__menu-item">
+        <a href="#" class="overlay__menu-link">вибір керівника</a>
+      </li>
+      <li class="overlay__menu-item">
+        <a href="#" class="overlay__menu-link">Особистий кабінет</a>
+      </li>
+    </ul>
+
+  </div>
+</header>
+
+
+  <script>
+  const button = document.querySelector('.header__burger');
+  const header = document.querySelector('.header');
+
+  button.addEventListener('click', function() {
+    button.classList.toggle('is-active');
+    header.classList.toggle('nav-open');
+  });
+</script>
+  </body>
+</html>

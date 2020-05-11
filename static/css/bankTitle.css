@@ -1,0 +1,76 @@
+:root {
+    --bg-color: rgb(112, 119, 179);
+    --line-color: #E7CB83;
+    --text-color: #313A7F;
+  --text-color-white: #FFFFFF;
+}
+
+
+.section__bankTitlelist{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  align-self: center;
+    margin-top: 100px;
+
+}
+.section__bankTitlelist-headline{
+ display: flex;
+    justify-content: center;
+    /*text-align: center;*/
+    font-size: 36px;
+    color: var(--bg-color);
+     font-family: 'Quicksand', serif;
+    font-weight: bold;
+}
+@media  (min-width: 768px) {
+
+    .section__bankTitlelist-headline{
+        font-size: 26px;
+         margin-top: -40px;
+        flex-wrap: wrap;
+    }
+}
+.bankTitlelist{
+    justify-content: center;
+    list-style: none;
+    font-size: 20px;
+    padding: 20px;
+     border-color: var(--bg-color);
+    background-color: var(--text-color-white);
+}
+.bankTitlelist_list{
+    /*background: var(--bg-color);*/
+    border-color: var(--bg-color);}
+
+.bankTitlelist_title{
+
+position: relative;
+display: block;
+padding: .4em .4em .4em .8em;
+margin: .5em 0 .5em 2.5em;
+background: var(--line-color);
+text-decoration: none;
+transition: all .3s ease-out;
+
+}
+.bankTitlelist_title:hover {
+    background: var(--bg-color);
+    border-color: var(--bg-color);
+    color: var(--line-color)}
+
+.bankTitlelist_title:after {
+position: absolute;
+content: "";
+border: .5em solid transparent;
+left: -1em;
+top: 50%;
+margin-top: -.5em;
+transition: all .3s ease-out;
+}
+.bankTitlelist_title:hover:after {
+left: -.5em;
+border-left-color: var(--bg-color);
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../static/css/cabinet.css" rel="stylesheet">
+</head>
+<body>
+<div class="personal__cabinet">
+    <div class="personal__cabinet-title">
+						<h2 class="personal__cabinet-headline">Необхідно заповнити дані</h2>
+
+				</div>
+     <form class="personal__cabinet-form">
+
+
+            <p class="personal__cabinet-label"><label for="firstname" class="personal__cabinet-labelleft">Ім'я: </label></p>
+
+                <input  class="personal__cabinet-labelright" type="text" id="firstname" name="firstname"/>
+
+            <p class="personal__cabinet-label"> Прізвище:
+                <label for="lastname" class="personal__cabinet-labelleft"></label></p>
+                <input class="personal__cabinet-labelright" type="text" id="lastname" name="lastname"/>
+
+            <p class="personal__cabinet-label"> Дата народження:
+                <label for="date" class="personal__cabinet-labelleft"> </label></p>
+                <input class="personal__cabinet-labelright" type="date" id="date" name="date"/><br>
+
+         <p class="personal__cabinet-label-sex">
+             <label for="sex" class="personal__cabinet-labelleft"> Стать:    </label></br>
+        <input class="personal__cabinet-labelradio" type="radio" name="sex" value="мужской">Чоловіча
+         <input class="personal__cabinet-labelradio" type="radio" name="sex" value="женский">Жіноча</br>
+
+         </p>
+
+          <p class="personal__cabinet-label">
+                <label for="group" class="personal__cabinet-labelleft">Група: </label> </p>
+                <input class="personal__cabinet-labelright" type="text" id="group" name="group"/>
+
+         <p class="personal__cabinet-label">
+                <label for="hobby" class="personal__cabinet-labelleft">Хобі: </label></p>
+                <input class="personal__cabinet-labelright" type="text" id="hobby" name="hobby"/>
+
+
+                <label for="programming language" class="personal__cabinet-labelleft"> Мова програмування: </label></p>
+              <select name="programming language">
+              <option>Обрати мову програмування</option>
+              <option value="Python">Python</option>
+              <option value="C++">C++</option>
+              <option value="Javascript">Javascript</option>
+              <option value="C#">C#</option>
+              </select>
+<br>
+         <p class="personal__cabinet-label">
+                <label for="subject" class="personal__cabinet-labelleft">Предмет: </label> </p>
+                <input class="personal__cabinet-labelright" type="text" id="subject" name="subject"/>
+
+         <p class="btn__input-file">
+
+              <input name="file" type="file" name="file" id="input__file" class="input input__file" multiple>
+              <label for="input__file" class="input__file-button">
+              <span class="input__file-icon-wrapper"><img class="input__file-icon" src="../img/sign.png" alt="Выбрать файл" width="25"></span>
+                  <span class="input__file-button-text">Выберите файл</span></label>
+         </p>
+            <p>
+                <button type="submit" class="btn__save">Зберегти</button>
+            </p>
+
+        </form>
+</div>
+</body>
+</html>
